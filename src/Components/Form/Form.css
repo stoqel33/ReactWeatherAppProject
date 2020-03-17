@@ -1,5 +1,8 @@
 form{
+  width: 600px;
   padding: 20px;
+  margin: 10px;
+  border-bottom: 2px solid white ;
 }
 
 input{
