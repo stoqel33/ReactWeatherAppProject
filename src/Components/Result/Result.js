@@ -9,16 +9,16 @@ const Result = props => {
   return (
     <>
       {err ? <p>{data}</p> :
-        <div>
+        <div className="wrapper">
           <p>{data}</p>
           <h1>{city}</h1>
-          <h2>Tepmeratura {temp.toFixed(1)} &#x2103;</h2>
+          <h2>{temp.toFixed(1)} &#x2103;</h2>
           <h3>Temperatura odczuwalna {feels.toFixed(1)} &#x2103;</h3>
           <p>Wschód słońca {sunriseTime}</p>
           <p>Zachód słońca {sunsetTime}</p>
           <p>Ciśnienie {pressure} hPa</p>
           <p>Wiatr {wind} km/h</p>
-          <p>{status}</p>
+          <p>{status.charAt(0).toUpperCase() + status.slice(1)}</p>
         </div>
       }
     </>

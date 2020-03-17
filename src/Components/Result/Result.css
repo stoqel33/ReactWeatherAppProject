@@ -5,3 +5,8 @@ h1,h1,h3{
 p{
   margin: 6px;
 }
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
