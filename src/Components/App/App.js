@@ -4,8 +4,8 @@ import Form from '../Form/Form';
 import Result from '../Result/Result';
 
 const APIkey = 'd9b6b27164757a07549519653faf6737';
-
 const time = new Date().toLocaleString();
+
 class App extends React.Component {
   state = {
     value: '',
@@ -25,6 +25,7 @@ class App extends React.Component {
     this.setState({
       value: e.target.value
     })
+
   }
 
   componentDidMount() {
@@ -67,7 +68,7 @@ class App extends React.Component {
         this.setState({
           err: true
         })
-        console.log('error')
+        console.log('error' + err)
       })
   }
 

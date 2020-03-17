@@ -12,11 +12,12 @@ const Result = props => {
         <div>
           <p>{data}</p>
           <h1>{city}</h1>
-          <h2>{temp}</h2>
-          <p>{sunriseTime}</p>
-          <p>{sunsetTime}</p>
-          <p>{pressure}</p>
-          <p>{wind}</p>
+          <h2>Tepmeratura {temp.toFixed(1)} &#x2103;</h2>
+          <h3>Temperatura odczuwalna {feels.toFixed(1)} &#x2103;</h3>
+          <p>Wschód słońca {sunriseTime}</p>
+          <p>Zachód słońca {sunsetTime}</p>
+          <p>Ciśnienie {pressure} hPa</p>
+          <p>Wiatr {wind} km/h</p>
           <p>{status}</p>
         </div>
       }
